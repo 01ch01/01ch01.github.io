@@ -1,22 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(../img/teal_00.jpg);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../img/teal_background.jpg');
   background-size: auto 100vh;
-  /* width: 100vw; */
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
+}
+
+header {
+  height: 100vh;
+  display: flex;
 }
 
 .menu {
   background-color: #fff;
-  border-radius: 0.5rem;
+  position: fixed;
 }
 
-.menu > ul {
+.menu ul {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
-  padding: 0;
-  padding: 1rem;
+}
+
+.menu li {
+  list-style: none;
 }
 
 a {
@@ -36,4 +47,9 @@ a:hover {
 
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  /* width: 180px;
+  height: 180px; */
 }
