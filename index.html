@@ -5,82 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cláudio Henrique</title>
     <link rel="stylesheet" href="src/assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/373499fe04.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav class="menu">
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+        <ul class="container">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
 
-      <div>
+      <div class="title">
         <h1 class="site-title">Cláudio Henrique</h1>
         <h2 class="site-subtitle">jr. web developer</h2>
-        <p>Graduando em Ciência da Computação pelo IF Sudeste MG Rio Pomba</p>
+        <p>
+          Graduando em Ciência da Computação pelo IF Sudeste MG de Rio Pomba
+        </p>
       </div>
     </header>
 
-    <section class="personal-projects">
-      <h2>Projetos Pessoais</h2>
+    <section class="about container" id="about">
+      <h2>Sobre</h2>
+      <figure class="avatar">
+        <img
+          src="https://avatars3.githubusercontent.com/u/38019405?s=460&u=bd999ec9aca7ffcfbceec04eeba8db44331d9c53&v=4"
+          alt="Uma pessoa de óculos, barba e fones de ouvido em frente ao notebook"
+        />
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam
+        eius neque quod dignissimos molestiae fuga accusantium fugit corrupti,
+        minima, voluptatem, cumque quam vitae! Sit, architecto! Quibusdam autem
+        aut delectus?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam
+        eius neque quod dignissimos molestiae fuga accusantium fugit corrupti,
+        minima, voluptatem, cumque quam vitae! Sit, architecto! Quibusdam autem
+        aut delectus?
+      </p>
+
+      <p>
+        Mais informações sobre historinhas de dragões acesse:
+        <a href="http://www.sesameworkshop.org">www.sesameworkshop.org</a>
+        &hearts;
+      </p>
+    </section>
+
+    <section class="projects container" id="projects">
+      <h2>Projetos</h2>
 
       <div class="grid">
-        <figure>
-          <img
-            class="img-personal-projects"
-            src="src/assets/img/monitorando.png"
-            alt="Página inicial do Projeto Monitorando"
-          />
-          <figcaption>Monitorando</figcaption>
-        </figure>
+        <a target="_blank" href="https://01ch01.github.io/monitorando">
+          <figure>
+            <img
+              class="img-projects"
+              src="src/assets/img/monitorando.png"
+              alt="Página inicial do Projeto Monitorando"
+            />
+            <figcaption>Monitorando</figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" href="https://01ch01.github.io/lyrics-search/">
+          <figure>
+            <img
+              class="img-projects"
+              src="src/assets/img/lyrics-search.png"
+              alt=">Site para pesquisar e ler letras de músicas"
+            />
+            <figcaption>Lyrics Search</figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" href="https://techflix.01ch01.vercel.app/">
+          <figure>
+            <img
+              class="img-projects"
+              src="src/assets/img/techflix.png"
+              alt="Site estilo Netflix com temática de programação"
+            />
+            <figcaption>Techflix</figcaption>
+          </figure>
+        </a>
 
         <figure>
           <img
-            class="img-personal-projects"
-            src="src/assets/img/lyrics-search.png"
-            alt=">Site para pesquisar e ler letras de músicas"
-          />
-          <figcaption>Lyrics Search</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            class="img-personal-projects"
-            src="src/assets/img/techflix.png"
-            alt="Site estilo Netflix com temática de programação"
-          />
-          <figcaption>Techflix</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-personal-projects"
-            src="src/assets/img/no_data.svg"
-            alt="Duas pranchetas vazias"
-          />
-          <figcaption>Em breve...</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-personal-projects"
-            src="src/assets/img/no_data.svg"
-            alt="Duas pranchetas vazias"
-          />
-          <figcaption>Em breve...</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-personal-projects"
-            src="src/assets/img/no_data.svg"
-            alt="Duas pranchetas vazias"
+            class="img-projects"
+            src="src/assets/img/developer_activity.svg"
+            alt="Ilustração de uma pessoa usando o notebook"
           />
           <figcaption>Em breve...</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact container" id="contact">
       <h2>Contato</h2>
 
       <div class="grid icons">
@@ -94,21 +120,16 @@
           <i class="fab fa-telegram"></i>
         </a>
         <a target="_blank" href="mailto:00claudio.henrique@gmail.com">
-          <i class="fas fa-envelope"></i>
+          <i class="fas fa-envelope" aria-label="Me envie um e-mail"></i>
         </a>
       </div>
     </section>
     <footer>
       <nav class="footer">
-        <h5>
+        <p>
           Copyright &copy; 2020 - Desenvolvido com &hearts; por Cláudio Henrique
-        </h5>
+        </p>
       </nav>
     </footer>
-
-    <script
-      src="https://kit.fontawesome.com/373499fe04.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
