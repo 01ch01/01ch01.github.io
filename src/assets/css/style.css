@@ -1,24 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  --neon-blue: #4666ff;
+  --non-photo-blue: #9bd1e5;
+  --light-cyan: #d1faff;
+  --blue-purple: #7171c6;
+  --purple: #292851;
+  --dim-gray: #686868;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-image: url('../img/teal_background.jpg');
+  background-color: var(--blue-purple);
   background-size: auto 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   height: 100vh;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 560px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 header {
-  height: 100vh;
+  align-items: center;
   display: flex;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
 }
 
 .menu {
-  background-color: #fff;
+  background-color: var(--purple);
   position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -30,8 +65,13 @@ header {
   list-style: none;
 }
 
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
 a {
-  color: teal;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -43,13 +83,57 @@ a:hover {
 .site-subtitle {
   color: whitesmoke;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.site-title {
+  font-size: 4em;
 }
 
 .site-subtitle {
   font-style: italic;
 }
 
-.img-portfolio {
-  /* width: 180px;
-  height: 180px; */
+.contact,
+.personal-projects {
+  background-color: var(--light-cyan);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.personal-projects h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5em;
+}
+
+.personal-projects .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .personal-projects .grid {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media (min-width: 850px) {
+  .personal-projects .grid {
+    grid-template-columns: repeat(3, 250px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 5.5em - 48px);
+    /* background-color: pink; */
+  }
+}
+
+.personal-projects figure {
+  text-align: center;
+}
+
+.img-personal-projects {
+  height: 150px;
+  width: 250px;
+  object-fit: fill;
 }
