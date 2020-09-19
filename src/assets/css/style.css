@@ -93,6 +93,34 @@ header {
   color: var(--purple);
 }
 
+.avatar > img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .title .avatar {
+    display: flex;
+    float: none;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-left: 0;
+  }
+
+  .avatar > img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .avatar > img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
 .site-title,
 .site-subtitle {
   color: white;
@@ -102,48 +130,24 @@ header {
 
 .site-title {
   font-size: 4em;
+  line-height: 1.3em;
 }
 
 .site-subtitle {
-  font-style: italic;
+  /* font-style: italic; */
+  font-weight: normal;
 }
 
 .title p {
   /* background-color: violet; */
   margin: 1em;
+  line-height: 1em;
+  /* border: 1px solid black; */
 }
 
-.about .avatar {
-  float: right;
-  margin: 2em;
-}
-
-.about .avatar > img {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-}
-
-@media (max-width: 600px) {
-  .about .avatar {
-    display: flex;
-    float: none;
-    justify-content: center;
-    margin-bottom: 2em;
-    margin-left: 0;
-  }
-
-  .about .avatar > img {
-    height: 150px;
-    width: 150px;
-  }
-}
-
-@media (max-width: 400px) {
-  .about .avatar > img {
-    height: 100px;
-    width: 100px;
-  }
+.title .avatar {
+  /* float: right; */
+  /* margin: 2em; */
 }
 
 .about,
@@ -152,7 +156,8 @@ header {
   background-color: var(--regular-blue);
   line-height: 1.5em;
   min-height: 100vh;
-  padding-left: 3em;
+  padding: 1em;
+  /* padding-top: 0; */
   color: whitesmoke;
 }
 
@@ -170,14 +175,33 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
   margin-bottom: 1.5em;
-  padding-top: 2em;
+  /* padding-top: 2em; */
   width: 100%;
 }
 
+@media (max-width: 400px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    /* min-width: 400px; */
+  }
+
+  .about h2,
+  .contact h2,
+  .projects h2 {
+    padding-top: 2em;
+  }
+}
+
 .about p {
-  margin-bottom: 1.5em;
-  text-align: justify;
+  /* text-align: start; */
   text-indent: 1.5em;
+  margin: 1em;
+}
+
+.about {
+  text-align: start;
+  /* margin-bottom: 1.5em; */
 }
 
 .projects .grid {
@@ -209,13 +233,20 @@ header {
   color: whitesmoke;
 }
 
-.contact .icons {
-  text-align: center;
+.icons {
+  /* background-color: violet; */
+  padding: 1em;
+  /* text-align: center;
+  align-content: center;
+  padding-bottom: 10em; */
 }
 
-.contact a {
-  font-size: 4em;
+.grid a {
+  font-size: 2.5em;
   transition: text-shadow 0.2s;
+  /* display: inline-flex; */
+  margin-right: 0.2em;
+  margin-left: 0.2em;
 }
 
 .contact a:active,
@@ -234,15 +265,10 @@ header {
   transition: transform 0.5s;
 }
 
-.contact a:hover {
-  text-decoration: none;
-}
-
 footer {
   padding: 1em;
+  background-color: var(--purple);
   text-align: center;
-  /* font-family: 'Poppins', sans-serif; */
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   color: whitesmoke;
-  /* text-shadow: 0px 0px 10px rgba(000, 000, 000, 1); */
 }
