@@ -146,7 +146,7 @@ header {
 }
 
 .icons {
-  padding: 1em;
+  padding: 3em;
 }
 
 .icons a {
@@ -163,13 +163,20 @@ header {
 }
 
 .about,
-.certificates,
-.projects {
+.showcase {
   background-color: var(--regular-blue);
-  line-height: 1.5em;
+  line-height: 2em;
   min-height: 100vh;
   padding: 1em;
   color: whitesmoke;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.about .container {
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: violet;
 }
 
 @media (min-width: 1200px) {
@@ -181,8 +188,7 @@ header {
 }
 
 .about h2,
-.certificates h2,
-.projects h2 {
+.showcase h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
   margin-bottom: 1.5em;
@@ -198,8 +204,7 @@ header {
   }
 
   .about h2,
-  .certificates h2,
-  .projects h2 {
+  .showcase h2 {
     padding-top: 2em;
   }
 }
@@ -207,21 +212,21 @@ header {
 .about p {
   text-indent: 1.5em;
   margin: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .about {
   text-align: start;
 }
 
-.certificates .grid,
-.projects .grid {
+.showcase .grid {
   display: grid;
   gap: 2em;
 }
 
 @media (min-width: 600px) {
-  .certificates .grid,
-  .projects .grid {
+  .showcase .grid {
     grid-template-columns: 250px 250px;
   }
 
@@ -236,17 +241,14 @@ header {
 }
 
 @media (min-width: 850px) {
-  .certificates .grid,
-  .projects .grid {
+  .showcase .grid {
     align-content: center;
     grid-template-columns: repeat(3, 250px);
-    /* height: calc(100vh - 5.5em - 48px); */
     justify-content: center;
   }
 }
 
-.certificates figure,
-.projects figure {
+.showcase figure {
   text-align: center;
 }
 
@@ -254,7 +256,7 @@ header {
   height: 150px;
   object-fit: fill;
   width: 250px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .grid figure:hover {
