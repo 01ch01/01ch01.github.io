@@ -3,7 +3,7 @@
 :root {
   font-family: 'Roboto', sans-serif;
   --neon-blue: #4666ff;
-  --non-photo-blue: #9bd1e5;
+  --regular-blue: #395db4;
   --light-cyan: #d1faff;
   --blue-purple: #7171c6;
   --purple: #292851;
@@ -21,6 +21,17 @@ body {
   background-size: auto 100vh;
   font-size: 12px;
   height: 100vh;
+  color: whitesmoke;
+}
+
+body a:visited,
+body a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 400px) {
@@ -71,8 +82,8 @@ header {
   display: block;
   font-family: 'Poppins', sans-serif;
   padding: 15px 20px;
-  text-decoration: none;
-  transition: background 0.5s, color 0.5s;
+  /* text-decoration: none; */
+  transition: background 1s, color 1s;
   width: 33.33vw;
 }
 
@@ -95,6 +106,11 @@ header {
 
 .site-subtitle {
   font-style: italic;
+}
+
+.title p {
+  /* background-color: violet; */
+  margin: 1em;
 }
 
 .about .avatar {
@@ -133,16 +149,18 @@ header {
 .about,
 .contact,
 .projects {
-  background-color: var(--non-photo-blue);
+  background-color: var(--regular-blue);
   line-height: 1.5em;
   min-height: 100vh;
+  padding-left: 3em;
+  color: whitesmoke;
 }
 
 @media (min-width: 1200px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -150,9 +168,9 @@ header {
 .contact h2,
 .projects h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 2em;
   margin-bottom: 1.5em;
-  padding: 15px 20px;
-  padding-top: 3em;
+  padding-top: 2em;
   width: 100%;
 }
 
@@ -188,8 +206,7 @@ header {
 
 .contact a,
 .projects .grid a {
-  color: black;
-  text-decoration: none;
+  color: whitesmoke;
 }
 
 .contact .icons {
@@ -217,7 +234,15 @@ header {
   transition: transform 0.5s;
 }
 
+.contact a:hover {
+  text-decoration: none;
+}
+
 footer {
   padding: 1em;
   text-align: center;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: bold;
+  color: whitesmoke;
+  /* text-shadow: 0px 0px 10px rgba(000, 000, 000, 1); */
 }
