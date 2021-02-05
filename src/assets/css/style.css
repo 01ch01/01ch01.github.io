@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   --neon-blue: #4666ff;
   --regular-blue: #395db4;
   --light-cyan: #d1faff;
@@ -143,7 +144,6 @@ header {
 
 .title p {
   margin: 1em;
-  line-height: 1em;
 }
 
 .icons {
@@ -159,7 +159,7 @@ header {
 
 .icons a:active,
 .icons a:hover {
-  text-shadow: 5px 5px 10px rgba(40, 41, 81, 0.5);
+  text-shadow: 5px 5px 10px rgba(40, 41, 81, 1);
   text-decoration: none;
 }
 
