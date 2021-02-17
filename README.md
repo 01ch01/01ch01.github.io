@@ -1,5 +1,6 @@
 # Site Pessoal / Portfolio
 
+<img src="./src/assets/img/desktop.png">
 
 ## :pencil: Descrição
 
@@ -18,4 +19,4 @@ Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](LICENSE) para
 
 ---
 
-Por Cláudio Henrique :purple_heart:
+<p align='center'>Feito com 💜 por Cláudio Henrique</p>
