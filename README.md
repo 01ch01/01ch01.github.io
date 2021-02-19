@@ -1,10 +1,10 @@
-# Site Pessoal / Portfolio
+<h1 align="center">Site Pessoal / Portfólio</h1>
 
 <img src="./src/assets/img/desktop.png">
 
-## :pencil: Descrição
+## :pencil2: Descrição
 
-Olá pessoas!
+Olá pessoas!:smile:
 
 Neste repositório está o meu site pessoal desenvolvido durante a Imersão CSS realizada pela [Alura](https://www.alura.com.br/).
 

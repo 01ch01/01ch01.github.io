@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Lato', sans-serif;
   --neon-blue: #4666ff;
   --regular-blue: #395db4;
   --light-cyan: #d1faff;
@@ -82,7 +85,6 @@ header {
 .menu a {
   color: whitesmoke;
   display: block;
-  font-family: 'Poppins', sans-serif;
   padding: 15px 20px;
   transition: background 1s, color 1s;
   width: 33.33vw;
@@ -129,7 +131,6 @@ header {
 .site-title,
 .site-subtitle {
   color: white;
-  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
@@ -190,7 +191,6 @@ header {
 
 .about h2,
 .showcase h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 2em;
   margin-bottom: 1.5em;
   padding-top: 2em;
@@ -212,9 +212,15 @@ header {
 
 .about p {
   text-indent: 1.5em;
-  margin: 1em;
+  font-size: 1rem;
   margin-top: 2em;
-  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .about p {
+    margin: 2rem;
+    font-size: inherit;
+  }
 }
 
 .about {
@@ -270,6 +276,5 @@ footer {
   padding: 1em;
   background-color: var(--purple);
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   color: whitesmoke;
 }
