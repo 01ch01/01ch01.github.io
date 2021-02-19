@@ -4,7 +4,7 @@
 
 ## :pencil2: Descrição
 
-Olá pessoas!:smile:
+Olá pessoas! :smile:
 
 Neste repositório está o meu site pessoal desenvolvido durante a Imersão CSS realizada pela [Alura](https://www.alura.com.br/).
 
